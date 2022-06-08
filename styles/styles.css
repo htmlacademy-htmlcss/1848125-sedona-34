@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format(wolf2);
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format(wolf2);
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+  width: 1200px;
+
+}
+
+.navigation-link {
+  color:#000000;
+  line-height: 26px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.about {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+}
+.reasons {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+}
+.main-reasons-1-2 {
+  width: 400px;
+  height: 384px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-align: center;
+}
+.reason {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+}
+.about-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.about-reasons-item-eat {
+  background-color: #ffffff;
+  width: 400px;
+  height: 384px;
+  text-align: center;
+
+}
+.about-reasons-item {
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+  text-transform: inherit;
+  text-align: center;
+}
+.about-reasons-desc {
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: inherit;
+}
+.main-reasons {
+  width: 400px;
+  height: 384px;
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);;
+  text-align: center;
+}
+.five-reasons {
+  list-style-type: none;
+}
+.about-reasons-list {
+  list-style-type: none
+}
+.offer-list {
+  text-align: center;
+}
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+.offer {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+}
+.about-offer {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+}
+.button-find-hotell {
+width: 574px;
+height: 60px;
+background: #756157;
+border-radius: 4px;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+color: #ffffff;
+text-align: center;
+text-transform: uppercase
+}
+.subs {
+  background-image: url(../images/background-footer.jpg);
+  width: 1200px;
+  height: 411px;
+  text-align: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.subs-cont {
+  padding:94px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+
+}
+.subs-title {
+text-transform: uppercase;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+}
+.subs-info {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+}
+.field {
+width: 600px;
+height: 60px;
+border-radius: 0px 10px 10px 0px;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+color: #000000;
+opacity: 0.6;
+padding-left: 22px;
+margin-left: 222px;
+
+}
+.subs-button {
+background-color: #82B3D3;
+border-radius: 0px 10px 10px 0px;
+width: 200px;
+height: 60px;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.footer-social-list {
+  list-style-type: none;
+  display: inline-block;
+}
+
+
+
+
