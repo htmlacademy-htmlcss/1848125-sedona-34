@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
 <body>
@@ -13,27 +14,29 @@
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
-        <li class="navigation-ittem">
+        <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
         </li>
-        <li class="navigation-ittem">
+        <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
-        <li class="navigation-ittem">
+        <li class="navigation-item">
           <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-ittem">
-          <a class="navigation-link" href="#">
+        <li class="navigation-item">
+          <a class="user-menu" href="#">
+            <img src="/images/icons/search.svg" alt="поиск">
             <span class="visually-hidden">
               Поиск
             </span>
           </a>
         </li>
         <li class="navigation-ittem">
-          <a class="navigation-link" href="#">
-            <span class="vixually-hidden">
+          <a class="user-menu" href="#">
+            <img src="/images/icons/fav.svg" alt="понравившиеся">
+            <span class="visually-hidden">
               Понравившиеся
             </span>
           </a>
@@ -45,12 +48,13 @@
     </nav>
   </header>
   <main class="main-inner">
-    <div>
+    <div class="catalog-bg">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
+              <img src="/images/icons/home.svg">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -99,22 +103,24 @@
       </section>
     </div>
     <section class="catalog-hotels">
-      <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
-      <p class="search-results">Найдено гостиниц: 38</p>
-      <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-        <option value="populaar">Сначала популярные</option>
-      </select>
-      <a href="#" class="button button-cards">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a href="#" class="button button-view">
-        <span class="visually-hidden">Показать карточки во весь экран</span>
-      </a>
-      <a href="#" class="button button-list">
-        <span class="visually-hidden">Показать списки</span>
-      </a>
+      <div class="test">
+        <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
+        <p class="search-results">Найдено гостиниц: 38</p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="populaar">Сначала популярные</option>
+        </select>
+        <a href="#" class="button button-cards">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a href="#" class="button button-view">
+          <span class="visually-hidden">Показать карточки во весь экран</span>
+        </a>
+        <a href="#" class="button button-list">
+          <span class="visually-hidden">Показать списки</span>
+        </a>
+      </div>
       <ol class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
@@ -124,7 +130,7 @@
           </a>
           <span class="hotel-type">Гостиница</span>
           <span class="hotel-type">От 4000 ₽</span>
-          <a class="button button-hotel-details" href="#">Подробнее</a>
+          <a class="button-hotel-details button" href="#">Подробнее</a>
           <button class="fav-card-button button" type="button">В избранное</button>
           <img class="hotel-stars" src="/images/raiting/stars-4.svg" width="140" height="37"
             alt="Рейтинг отеля 4 звезды">
@@ -138,8 +144,8 @@
           </a>
           <span class="hotel-type">Гостиница</span>
           <span class="hotel-type">От 5000 ₽</span>
-          <a class="button button-hotel-details" href="#">Подробнее</a>
-          <button class="add-fav-card-button button" type="button">В избранном</button>
+          <a class="button-hotel-details button" href="#">Подробнее</a>
+          <button class="fav-card-button button" type="button">В избранном</button>
           <img class="hotel-stars" src="/images/raiting/stars-4-1.svg" width="140" height="37"
             alt="Рейтинг отеля 4 звезды">
           <p class="hotel-rating">Рейтинг: 9,2</p>
@@ -152,7 +158,7 @@
           </a>
           <span class="hotel-type">Гостиница</span>
           <span class="hotel-type">От 2500 ₽</span>
-          <a class="button button-hotel-details" href="#">Подробнее</a>
+          <a class="button-hotel-details button" href="#">Подробнее</a>
           <button class="fav-card-button button" type="button">В избранное</button>
           <img class="hotel-stars" src="/images/raiting/stars-3.svg" width="140" height="37"
             alt="Рейтинг отеля 3 звезды">
@@ -166,8 +172,8 @@
           </a>
           <span class="hotel-type">Гостиница</span>
           <span class="hotel-type">От 1500 ₽</span>
-          <a class="button button-hotel-details" href="#">Подробнее</a>
-          <button class="fav-card-button button" type="button">В избранное</button>
+          <a class="button-hotel-details button" href="#">Подробнее</a>
+          <button class="button fav-card-button" type="button">В избранное</button>
           <img class="hotel-stars" src="/images/raiting/stars-2.svg" width="140" height="37"
             alt="Рейтинг отеля 2 звезды">
           <p class="hotel-rating">Рейтинг:5,0</p>
@@ -200,15 +206,17 @@
         <option value="5">5</option>
       </select>
     </section>
-    <section class="subs">
-      <h1 class="subs-title">Подпишитесь на рассылку</h1>
-      <p class="subs-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subs-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="field" placeholder="Ваш e-mail" type="email" name="subs-email" id="subs-email" required>
-        <button class="button subs-button" type="submit">
-          <span class="visually-hidden">Подписаться</span>
-        </button>
-      </form>
+    <section class="subs-cat">
+      <div class="subs-cont-cat">
+        <h2 class="subs-title">Подпишитесь на рассылку</h2>
+        <p class="subs-info">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form class="subs-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="field" placeholder="Ваш e-mail" type="email" name="subs-email" id="subs-email" required />
+          <button class="button subs-button" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -217,26 +225,30 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button" href="https://vk.com/htmlacademy" target="_blank">
+            <img class="vk" src="/images/icons/vk.svg" alt="Вконтакте" width="24px" height="14px">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="button" href="https://t.me/htmlacademy" target="_blank">
+            <img class="TG" src="/images/icons/TG.svg" alt="Телеграм" width="18px" height="16px">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
+
         <li class="footer-social-item">
           <a class="button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <img class="youtube" src="/images/icons/youtube.svg" alt="Ютуб" width="22px" height="17px">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
     </section>
     <address class="footer-contacts">
-      <a class="footer-contacts-phone" href="tel:+7812812122">+7 (812) 812-12-12</a>
+      <a class="contact-phone" href="tel:+7812812122">+7 (812) 812-12-12</a>
     </address>
     <a class="footer-logo" href="https://htmlacademy.ru/">
-      <img class="logo" src="/images/logo/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html academy">
+      <img class="logo" src="/images/logo/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html academy" />
     </a>
   </footer>
 </body>
